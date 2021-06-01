@@ -66,7 +66,7 @@ img {
 
 .textos h2 {
     font-size: 40px;
-    color: #2257dc;
+    color: black;
     animation: moverIzquierda 1s ease-in;
 }
 
@@ -115,8 +115,13 @@ img {
     clip-path: circle(150% at 0 0);
 }
 
+.container a:hover{
+    color: grey;
+    transform: scale(1.25);
+}
+
 .dos a:hover {
-    color: brown;
+    color: grey;
     transform: scale(1.25);
 }
 

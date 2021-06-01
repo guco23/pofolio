@@ -1,4 +1,4 @@
-let boton = document.getElementById("icono");
+let boton = document.getElementById("icono"); 
 let enlaces = document.getElementById("enlaces");
 let contador = 0;
 
