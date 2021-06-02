@@ -3,14 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url(../img/fondo2.jpg);
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +33,9 @@ nav a {
 
 header {
     height: auto;
-    padding: 48px;
+    background-image: url(../img/fondo2.jpg); /*Fondo que únicamente se mostrará en la sección header*/
+    background-size: 100%;
+    padding: 140px;
     width: 100%;
 }
 
@@ -51,7 +48,7 @@ header {
     margin: auto;
 }
 
-img {
+#logo {
     display: block;
     height: 525px;
     width: 80%;
@@ -69,15 +66,70 @@ img {
     padding: 30px;
     animation: arriba 0.5s ease-in;
 }
+#menuinf a{
+    text-decoration: none; /*Para que no cambien de color las letras por ser enlaces*/
+    color: black;
+    font-weight: bold;
+}
+
 .menuh{
     color: #71c8c3;
     list-style-type: none;
 }
+
 .menuh li{
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 88px;
+    padding-right: 88px;
     display: inline;
     font-size: 25px;
+}
+#infogeneral{
+
+}
+.seccion{
+    padding-top: 23px;
+    padding-bottom: 101px;
+    padding-left: 50px;
+}
+.seccion div{
+    display: inline-block;
+    margin-top: 30px;
+}
+.seccion h1{
+    margin-top: 0;
+    animation: moverDerecha 1s ease-in;
+    font-size: 52px;
+}
+.seccion p{
+    animation: arriba 1s ease-in;
+    padding-bottom: 80%;
+    padding-top: 8px;
+    font-size: 25px;
+}
+.seccion img{
+    float: right;
+    display: inline;
+    width: 30%;
+    height: auto;
+    padding-right: 10px;
+    animation: moverIzquierda 1s ease-in;
+}
+#sc1{
+    background: rgb(1,47,65);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,63,121,1) 70%, rgba(1,47,65,1) 100%); /*Gradientes realizadas con
+    https://cssgradient.io/*/
+}
+#sc2{
+    background: rgb(143,233,119);
+    background: linear-gradient(90deg, rgba(143,233,119,1) 0%, rgba(45,96,32,1) 70%, rgba(21,60,11,1) 100%);
+}
+#sc3{
+    background: rgb(246,141,38);
+    background: linear-gradient(90deg, rgba(246,141,38,1) 0%, rgba(177,86,17,1) 70%, rgba(171,40,2,1) 100%);
+}
+#sc3 img{
+    width: 22%;
+    margin-right: 3%;
 }
 .textos {
     width: 70%;
@@ -109,11 +161,7 @@ img {
     animation: arriba 1s ease-in;
 }
 
-.wave {
-    height: 100px;
-    width: 100%;
-}
-
+/* Código no utilizado (eliminar)
 .enlaces {
     position: fixed;
     display: flex;
@@ -149,7 +197,7 @@ img {
     color: grey;
     transform: scale(1.25);
 }
-
+*/
 @keyframes moverIzquierda {
     0% {
         opacity: 0;
