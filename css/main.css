@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 body {
     font-family: 'Quicksand', sans-serif;
     background-image: url(../img/fondo2.jpg);
@@ -55,11 +59,25 @@ img {
     animation: arriba 1s ease-in;
 }
 #menuinf{
-    background-color: black;
-    bottom: 0px;
-    position: sticky;
-    margin: 0%;
-    position: relative;
+    background-color: rgba(168, 190, 202, 0.973);
+    bottom: 0;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 30px;
+    animation: arriba 0.5s ease-in;
+}
+.menuh{
+    color: #71c8c3;
+    list-style-type: none;
+}
+.menuh li{
+    padding-left: 130px;
+    padding-right: 130px;
+    display: inline;
+    font-size: 25px;
 }
 .textos {
     width: 70%;
@@ -78,12 +96,12 @@ img {
 }
 
 .textos a {
+    background-color: #fff;
     display: inline-block;
-    color: #fff;
+    color: black;
     font-weight: 300;
     text-decoration: none;
     margin-top: 30px;
-    border: 1px solid #fff;
     width: 150px;
     border-radius: 3px;
     text-align: center;
