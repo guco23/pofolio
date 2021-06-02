@@ -11,34 +11,14 @@ body {
     background-size: cover;
     height: 100%;
 }
-
-nav {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.icono {
-    display: block;
-    z-index: 100000000;
-    animation: moverIzquierda 1s ease-in;
-}
-
 header {
     height: auto;
     background-image: url(../img/fondo2.jpg); /*Fondo que únicamente se mostrará en la sección header*/
     background-size: 100%;
-    padding: 140px;
+    padding: 55px;
+    padding-bottom: 110px;
     width: 100%;
 }
-
 .container {
     width: 95%;
     max-width: 1200px;
@@ -47,7 +27,6 @@ header {
     justify-content: space-around;
     margin: auto;
 }
-
 #logo {
     display: block;
     height: 525px;
@@ -71,12 +50,10 @@ header {
     color: black;
     font-weight: bold;
 }
-
 .menuh{
     color: #71c8c3;
     list-style-type: none;
 }
-
 .menuh li{
     padding-left: 88px;
     padding-right: 88px;
@@ -91,13 +68,14 @@ header {
 }
 .seccion{
     padding-top: 23px;
-    padding-bottom: 101px;
+    padding-bottom: 28px;
     padding-left: 50px;
+    overflow: auto;
 }
 .seccion div{
+    margin-left: 5%;
     display: inline-block;
     margin-top: 30px;
-    margin-bottom: 180px;
 }
 .seccion h1{
     margin-top: 0;
@@ -110,6 +88,7 @@ header {
     font-size: 25px;
 }
 .seccion img{
+    margin-right: 5%;
     float: right;
     display: inline;
     width: 30%;
@@ -132,7 +111,7 @@ header {
 }
 #sc3 img{
     width: 22%;
-    margin-right: 3%;
+    margin-right: 9%;
 }
 .textos {
     width: 70%;
@@ -163,44 +142,6 @@ header {
     padding: 10px 0;
     animation: arriba 1s ease-in;
 }
-
-/* Código no utilizado (eliminar)
-.enlaces {
-    position: fixed;
-    display: flex;
-    top: 0;
-    background: #000;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    right: 0;
-    flex-direction: column;
-    width: 100%;
-    transition: all 1s ease;
-    background: #71c8c3;
-    font-size: 32px;
-}
-
-.uno {
-    -webkit-clip-path: circle(0% at 0 0);
-    clip-path: circle(0% at 0 0);
-}
-
-.dos {
-    -webkit-clip-path: circle(150% at 0 0);
-    clip-path: circle(150% at 0 0);
-}
-
-.container a:hover{
-    color: grey;
-    transform: scale(1.25);
-}
-
-.dos a:hover {
-    color: grey;
-    transform: scale(1.25);
-}
-*/
 @keyframes moverIzquierda {
     0% {
         opacity: 0;
@@ -234,10 +175,18 @@ header {
     }
 }
 
-@media screen and (max-width:1280px) {
+
+@media screen and (max-width:1000px) {
     img {
+        height: 400px;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    img {
         height: 370px;
+        width: 100%;
     }
     .textos h1 {
         font-size: 70px;
@@ -247,7 +196,7 @@ header {
     }
 }
 
-@media screen and (max-width:999px) {
+@media screen and (max-width:700px) {
     img {
         height: 250px;
         width: 100%;
@@ -260,7 +209,7 @@ header {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:450px) {
     .container {
         width: 100%;
         flex-wrap: wrap-reverse;
@@ -275,9 +224,9 @@ header {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:340px) {
     img {
-        height: 600000px;
+        height: 160px;
     }
     .textos h1 {
         font-size: 35px;
@@ -288,4 +237,4 @@ header {
     .textos h2 {
         font-size: 15px;
     }
-}   
+}
